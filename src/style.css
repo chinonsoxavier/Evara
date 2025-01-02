@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: montserrat, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.Pacifico {
+  font-family: Pacifico, montserrat, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Heebo {
+  font-family: Heebo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.max_width {
+  max-width: 80rem;
+  padding: 0 0.5rem;
+}
+
+.xsText {
+  @apply text-xs font-medium text-lightText;
+}
+.smallText {
+  @apply text-small font-medium text-lightText;
+}
+.smText {
+  @apply text-sm font-medium text-lightText;
+}
+.mediumText {
+  @apply text-medium font-medium text-lightText;
+}
+.baseText {
+  @apply text-base font-medium text-lightText;
+}
+.normalText {
+  @apply text-normal font-medium text-lightText;
+}
+.lgText {
+  @apply text-lg font-medium text-lightText;
+}
+.largeText {
+  @apply text-large font-medium text-lightText;
+}
+.extraText {
+  @apply text-extra font-medium text-lightText;
+}
+
+.flex-2 {
+  flex: 2 1 0%;
+}
+.flex-3 {
+  flex: 3 1 0%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OurChefsReComponents_AnimatedBg:hover {
+  background-size: 120%;
+  animation-duration: 700ms;
+}
+
+.OurChefsReComponents_AnimatedBg {
+  animation-duration: 700ms;
+  background-size: 100%;
+  background-position: center 10%;
+}
+
+.ourMenusComponentBg {
+  background-size: 101%;
+  animation-duration: 700ms;
+  /* background-clip: content-box; */
+}
+
+.ourMenusComponentBg:hover {
+  background-size: 110%;
+  animation-duration: 700ms;
+  /* margin: 40px; */
+}
+
+.start {
+  /* grid-row-start: 1; */
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+
+@media (min-width: 380px) {
+  .max_width {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .max_width {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 720px) {
+  .max_width {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 1024) {
+  .max_width {
+    padding: 0 6rem;
+  }
+}
