@@ -15,6 +15,8 @@ import { facebookImg, githubImg, googleImg } from '../../../../utilities/exports
 const authStore = useAuthStore();
 
 import { useRouter } from 'vue-router';
+import GoogleMultiColoredIcon from '../../../../components/icons/multi-colored/GoogleMultiColoredIcon.vue';
+import GitHubFilledIcon from '../../../../components/icons/filled-icons/GitHubFilledIcon.vue';
 const router = useRouter();
 const togglePassVisibility = () => {
   passwordVisible.value = !passwordVisible.value;
@@ -45,17 +47,19 @@ const googleLogin = () => {
     class="w-screen items-center justify-center h-screen bg-lightPrimary"
   >
     <LogoImage />
-    <div
-      class="flex-col gap-5 mobile:my-3 my-5 flex items-center justify-center bg-white shadow-lg p-7"
+  <div
+      class="flex-col my-5 gap-5 flex items-center justify-center w-full max-w-[540px] bg-white w-in shadow-lg px-14 py-10"
     >
-      <StartComponent>
+      <ColumnComponent class="text-center gap-1" >
         <p
-          class="font-Heeb text-large text-primary font-semibold whitespace-nowrap"
+          class="font-Heeb text-[28px] text-darkText  font-semibold whitespace-nowrap"
         >
-          Login
+          Sign In
         </p>
-      </StartComponent>
-      <ColumnStartComponent class="w-full  max-w-[500px] flex-wrap gap-5">
+                <p class="text-medium text-lightText font-medium" >New to our service? <span class="text-primary " ><router-link to="/auth/register" >Create an account</router-link></span></p>
+
+      </ColumnComponent>
+        <ColumnStartComponent class="w-full  max-w-[500px]">
         <EvInputLabel
           class="w-full flex-1 "
           label="Email Address"
@@ -66,9 +70,9 @@ const googleLogin = () => {
         />
           <ColumnStartComponent class="gap-2 w-full">
     <label
-      for="login-input-email"
-      class="text-sm font-semibold text-lightText"
-      v-if="label"
+      for="register-input-email"
+      class="text-sm font-semibold mt-5 text-lightText"
+      
       >Your Password</label
     >
     <div
@@ -82,7 +86,7 @@ const googleLogin = () => {
       <!-- {{ icon }} -->
       <input
       :type="passwordVisible ?'text':'password'"
-        id="login-input-email"
+        id="register-input-email"
         v-model="formData.password"
         class="placeholder:text-[#BDBBC9] group-focus duration-700 text-lightText placeholder:text-semibold font-normal w-full px-2 py-[7px] bg-transparent border-none outline-none"
       />
@@ -90,30 +94,25 @@ const googleLogin = () => {
 
   </ColumnStartComponent>
       </ColumnStartComponent>
-      <StartComponent class="gap-2">
-        <p class="text-sm font-medium text-primary cursor-pointer">Forgot Password?
-        </p>
-      </StartComponent>
       <CenterComponent>
         <div v-on:click="login" class="w-full" >
-        <TextButton  text="LOGIN" theme="primary" class="w-full" />
+        <TextButton text="Sign In" theme="primary" class="w-full" />
         </div>
       </CenterComponent>
+        <CenterComponent>
+        <p class="text-sm font-medium text-primary text-center max-w-80">
+          Forgot your password?
+        </p>
+      </CenterComponent>
       <hr class="w-full h-[1px] bg-gray-300 border-none" >
-      <ColumnComponent class="items-center gap-4" >
+      <ColumnComponent class="items-center gap-4 w-full" >
     <p class="text-sm text-lightText font-semibold" >Or continue with</p>
-    <CenterComponent class="gap-4" >
-      <div v-on:click="googleLogin" >
-        <TextButton text="GOOGLE" theme="#df4930" class="bg-[#df4930]" :img="googleImg"  />
-      </div>
-        <TextButton text="FACEBOOK" theme="" class="bg-[#507cc0]" :img="facebookImg" />
-        <TextButton text="GITHUB" theme="" class="bg-[black]" :img="githubImg" />
+   <CenterComponent class="gap-4 flex-col w-full" >
+        <TextButton text="Continue with Google" theme="transparent" borders="" class="border w-full border-gray-400 text-[#1E5EFF]"  :icon="GoogleMultiColoredIcon"  />
+        <TextButton text="Continue with Github" theme="transparent" borders="" class="border w-full border-gray-400 text-[#1E5EFF]"  :icon="GitHubFilledIcon"  />
     </CenterComponent>
     </ColumnComponent>
     </div>
-    <CenterComponent class="" >
-        <p class="text-medium text-lightText font-medium" >Don`t have an account? <span class="text-primary " ><router-link to="/auth/register" >Register</router-link></span></p>
-    </CenterComponent>
   </ColumnComponent>
   <!-- </form> -->
 </template>

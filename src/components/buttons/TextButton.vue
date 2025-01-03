@@ -4,6 +4,9 @@ import { defineProps,defineEmits } from "vue";
   theme: {
     type: String,
     // default: "primary",
+   },
+   border: {
+    type:String
   },
   text: {
     type: String,
@@ -30,15 +33,15 @@ defineEmits([
 </script>
 
 <template>
-  <button v-bind="$attrs" @click="$emit('emitTextButtonClick')"
-    class="py-[7px] border text-center border-transparent flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold px-4 relative rounded"
+  <button style="position: relative;" v-bind="$attrs" @click="$emit('emitTextButtonClick')"
+    class="py-[7px] px-5 relative border border-transparent text-center flex items-center justify-center gap-2 whitespace-nowrap text-sm b rounded"
     :class="[
       disabled && 'bg-[#313133]' ,
-         `bg-primary fill-white  text-white duration-500 before:absolute before:w-full before:h-full before:rounded before:duration-500 before:z-0 before:hover:bg-[rgba(0,0,0,0.2)]`
+         `bg-${theme} bg-[${theme}] fill-white  text-white duration-500 before:absolute before:w-full before:h-full before:rounded before:duration-500 before:z-0 before:hover:bg-[rgba(0,0,0,0.2)] before:inset-0`
     ]"
   >
-  <img v-if="img" :src="img" class="m max-w-[18px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ]" alt="button image">
-    <component :is="icon" class="w-[18px] fill-current h-[18px]"></component>
+  <img v-if="img" :src="img" class="m max-w-[18px]" alt="button image">
+  <component :is="icon" class="w-[18px] fill-current h-[18px]"></component>
     <span class="relative z-10" >
       {{ text }}
     </span>
