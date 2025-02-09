@@ -1,4 +1,4 @@
-<script setup>
+<script  lang="ts" setup>
 import TextButton from '../../../../components/buttons/TextButton.vue';
 import TextOutlineButton from '../../../../components/buttons/TextOutlineButton.vue';
 import ColumnStartComponent from '../../../../components/ColumnStartComponent.vue';

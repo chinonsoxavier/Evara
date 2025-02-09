@@ -1,4 +1,4 @@
-<script setup >
+<script  lang="ts" setup >
 import EvComponent from './EvComponent.vue';
 import CaretRightIcon from './icons/line-icons/CaretRightIcon.vue';
 import StartComponent from './StartComponent.vue';

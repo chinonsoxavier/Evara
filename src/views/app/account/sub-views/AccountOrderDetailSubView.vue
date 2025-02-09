@@ -1,4 +1,4 @@
-<script setup>
+<script  lang="ts" setup>
 import ColumnStartComponent from "../../../../components/ColumnStartComponent.vue";
 import FlexComponent from "../../../../components/FlexComponent.vue";
 import IconComponent from "../../../../components/IconComponent.vue";

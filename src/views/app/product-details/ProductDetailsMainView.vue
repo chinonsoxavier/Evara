@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 import BetweenComponent from '../../../components/BetweenComponent.vue';
 import TextButton from '../../../components/buttons/TextButton.vue';
 import CenterComponent from '../../../components/CenterComponent.vue';

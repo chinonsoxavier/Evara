@@ -1,4 +1,4 @@
-<script setup >
+<script  lang="ts" setup >
 import TextButton from '../../../../components/buttons/TextButton.vue';
 import ColumnComponent from '../../../../components/ColumnComponent.vue';
 import EndComponent from '../../../../components/EndComponent.vue';

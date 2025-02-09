@@ -1,4 +1,4 @@
-<script setup>
+<script  lang="ts" setup>
 import ColumnComponent from "../../../../components/ColumnComponent.vue";
 import StartComponent from "../../../../components/StartComponent.vue";
 import AccountOrdersComponent from "../components/AccountOrdersComponent.vue";

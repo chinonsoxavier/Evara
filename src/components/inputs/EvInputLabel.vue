@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 import { defineProps, defineEmits } from "vue";
 // import SearchIcon from "../icons/line-icons/SearchIcon.vue";
 import ColumnStartComponent from "../ColumnStartComponent.vue";

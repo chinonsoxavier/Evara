@@ -1,4 +1,4 @@
-<script setup >
+<script  lang="ts" setup >
 import EvComponent from './EvComponent.vue';
 import FlexComponent from './FlexComponent.vue';
 import ProductCardComponent from './ProductCardComponent.vue';

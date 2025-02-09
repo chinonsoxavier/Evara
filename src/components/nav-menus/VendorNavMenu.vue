@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 import { ref } from "vue";
 import BetweenComponent from "../BetweenComponent.vue";
 import EndComponent from "../EndComponent.vue";

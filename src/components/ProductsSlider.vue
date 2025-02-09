@@ -1,5 +1,5 @@
 <script setup lang="ts" >
-import { onMounted, ref, defineProps, onUnmounted } from "vue";
+import { ref, defineProps } from "vue";
 import EvComponent from "./EvComponent.vue";
 import BetweenComponent from "./BetweenComponent.vue";
 import FlexComponent from "./FlexComponent.vue";
@@ -17,11 +17,7 @@ const translateX = ref(0);
 // const handleSlide = () => {
   //   productCardContainer.value.style.transform = `translateX(${4 * productPerSlide.value}px)`
   // }
-  const Alert = () => {
-    alert("gvghvg");
-  };
 
-const test = document.getElementById("test")?.addEventListener("load",updateProductPerSlide);
 const next = () => {
   if (
     translateX.value >

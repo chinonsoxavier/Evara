@@ -1,4 +1,4 @@
-<script setup>
+<script  lang="ts" setup>
 import { ref } from "vue";
 import CheckFilledIcon from "../../../../components/icons/filled-icons/CheckFilledIcon.vue";
 import ColumnStartComponent from "../../../../components/ColumnStartComponent.vue";

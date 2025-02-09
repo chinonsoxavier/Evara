@@ -1,4 +1,4 @@
-<script setup>
+<script  lang="ts" setup>
 // import ColumnStartComponent from '@/components/ColumnStartComponent.vue';
 import { ref } from "vue";
 import BetweenComponent from "../../../../components/BetweenComponent.vue";

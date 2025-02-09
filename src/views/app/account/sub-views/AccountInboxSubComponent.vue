@@ -1,4 +1,4 @@
-<script setup >
+<script  lang="ts" setup >
 import ColumnComponent from '../../../../components/ColumnComponent.vue';
 import AccountInboxComponent from '../components/AccountInboxComponent.vue';
 </script>

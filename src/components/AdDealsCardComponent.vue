@@ -1,4 +1,4 @@
-<script setup >
+<script  lang="ts" setup >
 import { ProductImg } from '../utilities/exports';
 import CenterComponent from './CenterComponent.vue';
 import ColumnComponent from './ColumnComponent.vue';

@@ -1,4 +1,4 @@
-<script setup >
+<script lang="ts" setup >
 import HeaderRoutePaginiationComponent from '../../../components/HeaderRoutePaginiationComponent.vue';
 import FooterComponent from '../../../components/layout/FooterComponent.vue';
 import NewsLetterComponent from '../../../components/layout/NewsLetterComponent.vue';

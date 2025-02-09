@@ -1,4 +1,4 @@
-<script setup>
+<script  lang="ts" setup>
 import CenterComponent from '../../../../components/CenterComponent.vue';
 import StartComponent from '../../../../components/StartComponent.vue';
 

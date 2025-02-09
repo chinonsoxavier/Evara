@@ -1,3 +1,4 @@
+<script lang="ts" ></script>
 <template>
     <div>
         <svg xmlns="http://www.w3.org/2000/svg" fill="current" class="bi bi-star-fill" viewBox="0 0 16 16">

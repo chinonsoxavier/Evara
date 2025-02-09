@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 import { onBeforeMount, onMounted, onUnmounted, ref, watch } from "vue";
 import LogoImage from "../logo/LogoImage.vue";
 import ColumnComponent from "../ColumnComponent.vue";

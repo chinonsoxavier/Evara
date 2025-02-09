@@ -1,4 +1,4 @@
-<script setup >
+<script lang="ts" setup >
 import BetweenComponent from '../BetweenComponent.vue';
 import EndComponent from '../EndComponent.vue';
 import EvComponent from '../EvComponent.vue';

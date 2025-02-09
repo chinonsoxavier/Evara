@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 import { PaymentGatewaysImg } from '../../utilities/exports';
 import BetweenComponent from '../BetweenComponent.vue';
 import ColumnStartComponent from '../ColumnStartComponent.vue';

@@ -1,4 +1,4 @@
-<script setup >
+<script lang="ts" setup >
 import { RouterView, useRoute } from 'vue-router';
 import HeaderRoutePaginiationComponent from '../../../components/HeaderRoutePaginiationComponent.vue';
 import NavBarComponent from '../../../components/nav-menus/NavBarComponent.vue';

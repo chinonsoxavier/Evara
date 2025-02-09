@@ -1,4 +1,4 @@
-<script setup>
+<script  lang="ts" setup>
 import CenterComponent from "./CenterComponent.vue";
 import ImageComponent from "./ImageComponent.vue";
 import { defineProps } from "vue";

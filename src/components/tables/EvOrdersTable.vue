@@ -1,4 +1,4 @@
-<script setup >
+<script  lang="ts" setup >
 import { Avatar1 } from '../../utilities/exports';
 import BetweenComponent from '../BetweenComponent.vue';
 import TextButton from '../buttons/TextButton.vue';
