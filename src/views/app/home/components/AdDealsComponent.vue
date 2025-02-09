@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 import AdDealsCardComponent from '../../../../components/AdDealsCardComponent.vue';
 import BetweenComponent from '../../../../components/BetweenComponent.vue';
 import ColumnComponent from '../../../../components/ColumnComponent.vue';
