@@ -48,7 +48,7 @@ const googleLogin = () => {
   >
     <LogoImage />
   <div
-      class="flex-col my-5 gap-5 flex items-center justify-center w-full max-w-[540px] bg-white w-in shadow-lg px-14 py-10"
+      class="flex-col my-5 gap-5 flex items-center justify-center w-full max-w-[540px] bg-white rounded-md px-14 py-10"
     >
       <ColumnComponent class="text-center gap-1" >
         <p
@@ -96,20 +96,22 @@ const googleLogin = () => {
       </ColumnStartComponent>
       <CenterComponent>
         <div v-on:click="login" class="w-full" >
-        <TextButton text="Sign In" theme="primary" class="w-full" />
+        <TextButton text="Sign In" theme="primary" class="w-full text-white font-medium" />
         </div>
       </CenterComponent>
         <CenterComponent>
         <p class="text-sm font-medium text-primary text-center max-w-80">
-          Forgot your password?
+          <router-link to="/auth/reset-password">
+            Forgot your password?
+          </router-link>
         </p>
       </CenterComponent>
       <hr class="w-full h-[1px] bg-gray-300 border-none" >
       <ColumnComponent class="items-center gap-4 w-full" >
     <p class="text-sm text-lightText font-semibold" >Or continue with</p>
    <CenterComponent class="gap-4 flex-col w-full" >
-        <TextButton text="Continue with Google" theme="transparent" borders="" class="border w-full border-gray-400 text-[#1E5EFF]"  :icon="GoogleMultiColoredIcon"  />
-        <TextButton text="Continue with Github" theme="transparent" borders="" class="border w-full border-gray-400 text-[#1E5EFF]"  :icon="GitHubFilledIcon"  />
+        <TextButton text="Continue with Google" theme="transparent" borders="" class="border w-full border-gray-300 font-medium text-[#1E5EFF]"  :icon="GoogleMultiColoredIcon"  />
+        <TextButton text="Continue with Github" theme="transparent" borders="" class="border w-full border-gray-300 font-medium text-[#1E5EFF]"  :icon="GitHubFilledIcon"  />
     </CenterComponent>
     </ColumnComponent>
     </div>

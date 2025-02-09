@@ -34,7 +34,7 @@ const formData = ref({
   >
     <LogoImage />
     <div
-      class="flex-col my-5 gap-5 flex items-center justify-center w-full max-w-[540px] bg-white w-in shadow-lg px-14 py-10"
+      class="flex-col my-5 gap-5 flex items-center justify-center w-full max-w-[540px] bg-white w-in  px-14 py-10"
     >
       <ColumnComponent class="text-center gap-1" >
         <p

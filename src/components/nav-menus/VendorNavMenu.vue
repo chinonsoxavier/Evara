@@ -7,6 +7,9 @@ import MoonDuoIcon from "../icons/duo-tone/MoonDuoIcon.vue";
 import SunDuoIcon from "../icons/duo-tone/SunDuoIcon.vue";
 import NotificationDuoIcon from "../icons/duo-tone/NotificationDuoIcon.vue";
 import ChatDuoIcon from "../icons/duo-tone/ChatDuoIcon.vue";
+import LogoImage from "../logo/LogoImage.vue";
+import CaretDownIcon from "../icons/line-icons/CaretDownIcon.vue";
+
 
 const mode = ref(null);
 // onMounted(() => {
@@ -47,26 +50,30 @@ const setThemeMode = () => {
 </script>
 
 <template>
-  <div class="w-full py-4 px-4 duration-500 shadow-md bg-white dark:bg-[#0a2744]">
-    <BetweenComponent>
-      <p class="lgText">
-        <span class="text-large text-darkText dark:text-white font-semibold">Chinonso</span>
-      </p>
+  <div class="w-full py-5 px-10 duration-500 shadow-md bg-white dark:bg-[#070B1D]">
+    <BetweenComponent class="" >
+          <LogoImage class="fill-white max-w-36 w-full bg-[lue]" />
 
-      <EndComponent class="gap-2" >
-        <IconComponent data-tooltip-target="tooltip-arrow" class="relative" @click="setThemeMode" >
+      <EndComponent class="b-[red] gap-5" >
+        <IconComponent data-tooltip-target="tooltip-arrow" class="relative w-min h-min" @click="setThemeMode" >
           <MoonDuoIcon v-if="mode=='light'" class="w-6 h-6 duration-500 hover:fill-primary fill-darkText dark:fill-white" />
           <SunDuoIcon v-else class="w-7 h-7 duration-500 hover:fill-primary fill-darkText dark:fill-white" />
         </IconComponent>
-        <IconComponent>
+        <IconComponent class="w-min h-min" >
           <NotificationDuoIcon class="w-6 h-6 duration-500 hover:fill-primary fill-darkText dark:fill-white" />
         </IconComponent>
-        <IconComponent>
+        <IconComponent class="w-min h-min" >
           <ChatDuoIcon class="w-6 h-6 duration-500 hover:fill-primary fill-darkText dark:fill-white" />
         </IconComponent>
-        <IconComponent>
-          <SettingsDuoIcon class="w-6 h-6 duration-500 hover:fill-primary fill-darkText dark:fill-white" />
-        </IconComponent>
+        <div class="flex gap-2" >
+          <IconComponent class="text-2xl font-bold h-8 w-8 bg-primary text-white" >
+            C
+          </IconComponent>
+          <div class="flex items-center gap-2" >
+            <p class="text-white text-sm font-bold" >Chinonso Xavier</p>
+            <CaretDownIcon class="w-4 h-4 fill-white"/>
+          </div>
+        </div>
       </EndComponent>
     </BetweenComponent>
   </div>

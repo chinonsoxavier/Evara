@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
+import EvModalView from './components/modals/EvModalView.vue';
 
 
 onMounted(() => {
@@ -12,5 +13,8 @@ onMounted(() => {
 
 </script>
 <template>
-  <RouterView />
+  <section class="relative" >
+    <EvModalView/>
+    <RouterView />
+  </section>
 </template>

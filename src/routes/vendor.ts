@@ -4,7 +4,7 @@ export const vendorRoutes = [
     name: "vendor",
     meta: { requiresAuth: true },
     component: () => import("../views/vendor/VendorMainView.vue"),
-    redirect: "vendor/dashboard",
+    // redirect: "vendor/dashboard",
     children: [
       {
         name: "vendor-dashboard",
@@ -21,7 +21,12 @@ export const vendorRoutes = [
             name: "vendor-products-list",
             path: "/vendor/products/list",
             component: () =>
-              import("../views/vendor/products/ProductsListView.vue"),
+              import("../views/vendor/products/VendorProductsMainView.vue"),
+          },
+             {name: "vendor-products-add",
+            path: "/vendor/products/add",
+            component: () =>
+              import("../views/vendor/products/add-products/AddProductsMainView.vue")
           },
         ],
       },
@@ -34,7 +39,7 @@ export const vendorRoutes = [
             name: "vendor-categories-list",
             path: "/vendor/categories/list",
             component: () =>
-              import("../views/vendor/categories/CategoryMainView.vue"),
+              import("../views/vendor/categories/VendorCategoriesMainView.vue"),
           },
         ],
       },
@@ -47,7 +52,19 @@ export const vendorRoutes = [
             name: "vendor-orders-list",
             path: "/vendor/orders/list",
             component: () =>
-              import("../views/vendor/orders/OrdersMainView.vue"),
+              import("../views/vendor/orders/VendorOrdersMainView.vue"),
+          },
+        ],
+      }, {
+        name: "vendor-orders",
+        path: "/vendor/orders",
+        redirect: "/vendor/orders/list",
+        children: [
+          {
+            name: "vendor-orders-list",
+            path: "/vendor/orders/list",
+            component: () =>
+              import("../views/vendor/orders/VendorOrdersMainView.vue"),
           },
         ],
       },
@@ -60,7 +77,7 @@ export const vendorRoutes = [
             name: "vendor-attributes-list",
             path: "/vendor/attributes/list",
             component: () =>
-              import("../views/vendor/attributes/AttributesMainView.vue"),
+              import("../views/vendor/attributes/VendorAttributesMainView.vue"),
           },
         ],
       },

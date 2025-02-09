@@ -12,7 +12,7 @@ import StartComponent from "../../../../components/StartComponent.vue";
     class="w-screen items-center justify-center h-screen bg-lightPrimary">
     <LogoImage />
     <div
-      class="flex-col max-w-[450px] w-full gap-5 flex items-center justify-center bg-white w-in shadow-lg p-7"
+      class="flex-col max-w-[540px] w-full gap-5 flex items-center justify-center bg-white w-in rounded-md p-7"
     >
       <ColumnComponent class="w-full text-center">
         <p
@@ -34,7 +34,7 @@ import StartComponent from "../../../../components/StartComponent.vue";
         />
       </ColumnStartComponent>
       <CenterComponent class="gap-4 w-full">
-        <TextButton text="Reset Password" class="w-full relative" theme="primary" />
+        <TextButton text="Reset Password" class="w-full text-white relative" theme="primary" />
       </CenterComponent>
       <hr class="w-full h-[1px] bg-gray-300 border-none" />
       <p class="text-sm text-lightText" >Remembered your Password?</p>
@@ -44,7 +44,7 @@ import StartComponent from "../../../../components/StartComponent.vue";
         borders=""
         class="border w-full border-darkText text-[#1E5EFF]"
       /> -->
-      <div class="w-full p-[7px] border border-gray-300 text-[#1e5eff] center text-sm font-medium duration-500 hover:bg-[rgba(0,0,0,0.2)]" >
+      <div class="w-full p-[10px] border border-gray-300 text-[#1e5eff] center text-sm font-medium duration-500 hover:bg-[rgba(0,0,0,0.2)]" >
         <router-link to="/auth/login">
           Back to Sign in
         </router-link>   

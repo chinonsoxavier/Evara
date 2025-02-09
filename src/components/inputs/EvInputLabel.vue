@@ -29,7 +29,7 @@ const emitIconClick = () => {
 
 </script>
 <template>
-  <ColumnStartComponent class="gap-2">
+  <ColumnStartComponent class="gap-">
     <label
       for="input"
       class="text-sm font-semibold text-lightText"
